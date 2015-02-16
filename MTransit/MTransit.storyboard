@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6wh-fH-rVK">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Aa5-7F-xcl">
+            <objects>
+                <viewController id="6wh-fH-rVK" customClass="MTViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="emo-IE-7bB"/>
+                        <viewControllerLayoutGuide type="bottom" id="qfp-D8-MtI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="etd-VT-MfO">
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQy-6G-iDI">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <color key="barTintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="MezTransit" id="zOR-Yw-Yec"/>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HC4-nO-5OC">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Inbound from East Falls" id="pc2-kZ-AyC">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="changeStation:" destination="6wh-fH-rVK" id="KJB-Ro-6v6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="mnm-XK-EId"/>
+                                    <barButtonItem systemItem="refresh" id="OKN-Tx-L1Y">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="refreshTrains:" destination="6wh-fH-rVK" id="5my-eV-yST"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Norristown from East Falls" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AN7-ML-DPC">
+                                <rect key="frame" x="20" y="84" width="208" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="aT4-Dg-uBe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Train Number 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZ4-rq-dwz">
+                                <rect key="frame" x="20" y="142" width="118" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="d4k-nk-S3z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Train Time 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6g-8Z-Ceo">
+                                <rect key="frame" x="206" y="142" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chestnut Hill W from Queen Lane" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mh-pQ-anz">
+                                <rect key="frame" x="20" y="171" width="262" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8dO-4F-3Ih"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Train Time 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aip-ce-wjg">
+                                <rect key="frame" x="206" y="200" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Train Time 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MbQ-4L-3wA">
+                                <rect key="frame" x="206" y="229" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Train Number 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7K-Em-Tu8">
+                                <rect key="frame" x="20" y="200" width="118" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ugD-cJ-yDr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Train Number 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPF-AZ-YYd">
+                                <rect key="frame" x="20" y="229" width="118" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4pz-oG-qgP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Train Time 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQG-0g-Nx1">
+                                <rect key="frame" x="206" y="113" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qBM-m2-vER">
+                                <rect key="frame" x="20" y="270" width="280" height="234"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Train Number 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4K-Qb-m2e">
+                                <rect key="frame" x="20" y="113" width="118" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Kox-Fz-kp3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HC4-nO-5OC" firstAttribute="leading" secondItem="etd-VT-MfO" secondAttribute="leading" id="113-Da-aP4"/>
+                            <constraint firstItem="AN7-ML-DPC" firstAttribute="leading" secondItem="etd-VT-MfO" secondAttribute="leading" constant="20" id="1ee-XK-lL3"/>
+                            <constraint firstItem="zZ4-rq-dwz" firstAttribute="top" secondItem="F4K-Qb-m2e" secondAttribute="bottom" constant="8" id="2NL-9A-edY"/>
+                            <constraint firstItem="qBM-m2-vER" firstAttribute="leading" secondItem="etd-VT-MfO" secondAttribute="leading" constant="20" id="5Km-Uk-Rnl"/>
+                            <constraint firstItem="C7K-Em-Tu8" firstAttribute="leading" secondItem="etd-VT-MfO" secondAttribute="leading" constant="20" id="5cj-Sw-Scn"/>
+                            <constraint firstAttribute="trailing" secondItem="cQG-0g-Nx1" secondAttribute="trailing" constant="20" id="7XN-D3-4iG"/>
+                            <constraint firstAttribute="trailing" secondItem="Aip-ce-wjg" secondAttribute="trailing" constant="20" id="EyO-Ys-AZy"/>
+                            <constraint firstItem="bQy-6G-iDI" firstAttribute="leading" secondItem="etd-VT-MfO" secondAttribute="leading" id="HEf-Bb-hp0"/>
+                            <constraint firstItem="AN7-ML-DPC" firstAttribute="top" secondItem="bQy-6G-iDI" secondAttribute="bottom" constant="20" id="Hix-1M-nvv"/>
+                            <constraint firstItem="XPF-AZ-YYd" firstAttribute="top" secondItem="C7K-Em-Tu8" secondAttribute="bottom" constant="8" id="K63-y9-I8q"/>
+                            <constraint firstItem="x6g-8Z-Ceo" firstAttribute="top" secondItem="cQG-0g-Nx1" secondAttribute="bottom" constant="8" id="KSB-FT-dyn"/>
+                            <constraint firstItem="qBM-m2-vER" firstAttribute="top" secondItem="XPF-AZ-YYd" secondAttribute="bottom" constant="20" id="Kv8-UM-359"/>
+                            <constraint firstItem="Aip-ce-wjg" firstAttribute="top" secondItem="0mh-pQ-anz" secondAttribute="bottom" constant="8" id="RQc-yi-Dcw"/>
+                            <constraint firstItem="qfp-D8-MtI" firstAttribute="top" secondItem="HC4-nO-5OC" secondAttribute="bottom" id="Sxy-OP-zZv"/>
+                            <constraint firstAttribute="trailing" secondItem="bQy-6G-iDI" secondAttribute="trailing" id="TUa-hF-fZJ"/>
+                            <constraint firstItem="C7K-Em-Tu8" firstAttribute="top" secondItem="0mh-pQ-anz" secondAttribute="bottom" constant="8" id="Tdg-Ff-6dI"/>
+                            <constraint firstItem="HC4-nO-5OC" firstAttribute="top" secondItem="qBM-m2-vER" secondAttribute="bottom" constant="20" id="Xo2-LE-Fif"/>
+                            <constraint firstItem="0mh-pQ-anz" firstAttribute="top" secondItem="zZ4-rq-dwz" secondAttribute="bottom" constant="8" id="YaN-oc-hNs"/>
+                            <constraint firstItem="F4K-Qb-m2e" firstAttribute="leading" secondItem="etd-VT-MfO" secondAttribute="leading" constant="20" id="ZtI-jg-Pb3"/>
+                            <constraint firstAttribute="trailing" secondItem="HC4-nO-5OC" secondAttribute="trailing" id="dde-5V-Rgt"/>
+                            <constraint firstAttribute="trailing" secondItem="MbQ-4L-3wA" secondAttribute="trailing" constant="20" id="doH-xI-aCF"/>
+                            <constraint firstItem="bQy-6G-iDI" firstAttribute="top" secondItem="emo-IE-7bB" secondAttribute="bottom" id="gf7-ao-stf"/>
+                            <constraint firstAttribute="trailing" secondItem="x6g-8Z-Ceo" secondAttribute="trailing" constant="20" id="ige-Ij-dSk"/>
+                            <constraint firstItem="0mh-pQ-anz" firstAttribute="leading" secondItem="etd-VT-MfO" secondAttribute="leading" constant="20" id="mJn-nV-aT2"/>
+                            <constraint firstItem="zZ4-rq-dwz" firstAttribute="leading" secondItem="etd-VT-MfO" secondAttribute="leading" constant="20" id="obZ-G0-3Uj"/>
+                            <constraint firstItem="F4K-Qb-m2e" firstAttribute="top" secondItem="AN7-ML-DPC" secondAttribute="bottom" constant="8" id="onF-hf-UOl"/>
+                            <constraint firstAttribute="trailing" secondItem="qBM-m2-vER" secondAttribute="trailing" constant="20" id="phT-0a-gdZ"/>
+                            <constraint firstItem="cQG-0g-Nx1" firstAttribute="top" secondItem="AN7-ML-DPC" secondAttribute="bottom" constant="8" id="r2h-bz-zCy"/>
+                            <constraint firstItem="XPF-AZ-YYd" firstAttribute="leading" secondItem="etd-VT-MfO" secondAttribute="leading" constant="20" id="szH-Wc-Z5B"/>
+                            <constraint firstItem="MbQ-4L-3wA" firstAttribute="top" secondItem="Aip-ce-wjg" secondAttribute="bottom" constant="8" id="vml-7L-6En"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="cHWLabel" destination="0mh-pQ-anz" id="7P8-3r-B8l"/>
+                        <outlet property="inboundOutboundLabel" destination="pc2-kZ-AyC" id="tgo-hD-Awg"/>
+                        <outlet property="insetMap" destination="qBM-m2-vER" id="XG8-uN-jLL"/>
+                        <outlet property="norristownLabel" destination="AN7-ML-DPC" id="6xn-SD-kNu"/>
+                        <outlet property="trainFourNumber" destination="XPF-AZ-YYd" id="KcQ-bt-qkN"/>
+                        <outlet property="trainFourTime" destination="MbQ-4L-3wA" id="dfP-tS-fab"/>
+                        <outlet property="trainOneNumber" destination="F4K-Qb-m2e" id="2t9-xv-VCD"/>
+                        <outlet property="trainOneTime" destination="cQG-0g-Nx1" id="S15-rS-xVJ"/>
+                        <outlet property="trainThreeNumber" destination="C7K-Em-Tu8" id="Mm1-OQ-SPH"/>
+                        <outlet property="trainThreeTime" destination="Aip-ce-wjg" id="q2z-8B-tQN"/>
+                        <outlet property="trainTwoNumber" destination="zZ4-rq-dwz" id="OXc-wb-dMf"/>
+                        <outlet property="trainTwoTime" destination="x6g-8Z-Ceo" id="6zb-fv-Pb4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mtp-iA-Mag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="454" y="438"/>
+        </scene>
+    </scenes>
+</document>
