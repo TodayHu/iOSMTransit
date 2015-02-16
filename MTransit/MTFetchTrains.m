@@ -52,7 +52,7 @@
  
  Preset methods for adding new stations and routes.
  
- - Add method interface to "FetchTrains.h"
+ - Add method interface to "MTFetchTrains.h"
  - Choose implementation based on whether the station's a hub or a spoke
  
  For stations which are "hubs," defined as those which service
