@@ -1,7 +1,7 @@
 MTransit
 ========
 
-MTransit is an iOS 8 native version of [MezTransit](http://meztransit.herokuapp.com/), a single page web app build to gather and return some times for trains to and from a Philly neighborhood.
+MTransit is an iOS 8 native version of [MezTransit](http://meztransit.herokuapp.com/), a single page web app built to gather and return some times for trains to and from a Philly neighborhood.
 
 ![screenshot](https://github.com/kellyi/iOSMTransit/blob/master/image.png)
 
