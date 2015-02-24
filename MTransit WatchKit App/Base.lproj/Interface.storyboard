@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7515.2" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7512"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label alignment="left" text="East Falls to 30th" textAlignment="left" id="qJT-YG-e5Z"/>
+                        <label alignment="left" text="Train 1 / Time" id="mdD-XB-TQZ"/>
+                        <label alignment="left" text="Queen Ln to 30th" id="eyg-R5-4KX"/>
+                        <label alignment="left" text="Train 2 / Time" id="5h8-SW-Ks5"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Inbound" id="xRF-dp-e1p">
+                            <connections>
+                                <action selector="buttonPressed" destination="AgC-eL-Hgc" id="fcX-Cw-DvN"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="buttonText" destination="xRF-dp-e1p" id="2fK-PP-pik"/>
+                        <outlet property="norristownLabel" destination="qJT-YG-e5Z" id="5d8-Wm-baS"/>
+                        <outlet property="queenLaneLabel" destination="eyg-R5-4KX" id="lQQ-Vd-Oiv"/>
+                        <outlet property="trainOneLabel" destination="mdD-XB-TQZ" id="jiJ-iK-tbj"/>
+                        <outlet property="trainTwoLabel" destination="5h8-SW-Ks5" id="QgD-4V-uwL"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF364E5C1A9BDFC3009D408D /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF364E5B1A9BDFC3009D408D /* InterfaceController.m */; };
+		DF364E5E1A9BDFC3009D408D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF364E5D1A9BDFC3009D408D /* Images.xcassets */; };
+		DF364E621A9BDFC3009D408D /* MTransit WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = DF364E611A9BDFC3009D408D /* MTransit WatchKit App.app */; };
+		DF364E6A1A9BDFC3009D408D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF364E681A9BDFC3009D408D /* Interface.storyboard */; };
+		DF364E6C1A9BDFC3009D408D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF364E6B1A9BDFC3009D408D /* Images.xcassets */; };
+		DF364E6F1A9BDFC3009D408D /* MTransit WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DF364E561A9BDFC3009D408D /* MTransit WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DF364E7B1A9BF7E5009D408D /* MTTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DF364E7A1A9BF7E5009D408D /* MTTestClass.m */; };
 		DF6771101A8B03BF007433C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF67710F1A8B03BF007433C0 /* main.m */; };
 		DF6771131A8B03BF007433C0 /* MTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6771121A8B03BF007433C0 /* MTAppDelegate.m */; };
 		DF67711B1A8B03BF007433C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF67711A1A8B03BF007433C0 /* Images.xcassets */; };
@@ -20,6 +27,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DF364E631A9BDFC3009D408D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF6771021A8B03BF007433C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF364E601A9BDFC3009D408D;
+			remoteInfo = "MTransit WatchKit App";
+		};
+		DF364E6D1A9BDFC3009D408D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF6771021A8B03BF007433C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF364E551A9BDFC3009D408D;
+			remoteInfo = "MTransit WatchKit Extension";
+		};
 		DF6771241A8B03BF007433C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DF6771021A8B03BF007433C0 /* Project object */;
@@ -29,7 +50,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DF364E761A9BDFC3009D408D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DF364E6F1A9BDFC3009D408D /* MTransit WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		DF364E561A9BDFC3009D408D /* MTransit WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MTransit WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF364E591A9BDFC3009D408D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF364E5A1A9BDFC3009D408D /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		DF364E5B1A9BDFC3009D408D /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		DF364E5D1A9BDFC3009D408D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DF364E611A9BDFC3009D408D /* MTransit WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MTransit WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF364E671A9BDFC3009D408D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF364E691A9BDFC3009D408D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DF364E6B1A9BDFC3009D408D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DF364E781A9BF593009D408D /* MTransitKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTransitKit.h; sourceTree = "<group>"; };
+		DF364E791A9BF7E5009D408D /* MTTestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTTestClass.h; path = ../MTransit/MTTestClass.h; sourceTree = "<group>"; };
+		DF364E7A1A9BF7E5009D408D /* MTTestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTTestClass.m; path = ../MTransit/MTTestClass.m; sourceTree = "<group>"; };
 		DF67710A1A8B03BF007433C0 /* MTransit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTransit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF67710E1A8B03BF007433C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF67710F1A8B03BF007433C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,6 +99,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DF364E531A9BDFC3009D408D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DF6771071A8B03BF007433C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,12 +124,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF364E571A9BDFC3009D408D /* MTransit WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DF364E791A9BF7E5009D408D /* MTTestClass.h */,
+				DF364E7A1A9BF7E5009D408D /* MTTestClass.m */,
+				DF364E5A1A9BDFC3009D408D /* InterfaceController.h */,
+				DF364E5B1A9BDFC3009D408D /* InterfaceController.m */,
+				DF364E5D1A9BDFC3009D408D /* Images.xcassets */,
+				DF364E581A9BDFC3009D408D /* Supporting Files */,
+			);
+			path = "MTransit WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		DF364E581A9BDFC3009D408D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF364E591A9BDFC3009D408D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF364E651A9BDFC3009D408D /* MTransit WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				DF364E681A9BDFC3009D408D /* Interface.storyboard */,
+				DF364E6B1A9BDFC3009D408D /* Images.xcassets */,
+				DF364E661A9BDFC3009D408D /* Supporting Files */,
+			);
+			path = "MTransit WatchKit App";
+			sourceTree = "<group>";
+		};
+		DF364E661A9BDFC3009D408D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF364E671A9BDFC3009D408D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF364E771A9BF571009D408D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DF364E781A9BF593009D408D /* MTransitKit.h */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
 		DF6771011A8B03BF007433C0 = {
 			isa = PBXGroup;
 			children = (
+				DF364E771A9BF571009D408D /* Shared */,
 				DF6771381A8B1F2E007433C0 /* MapKit.framework */,
 				DF67710C1A8B03BF007433C0 /* MTransit */,
 				DF6771261A8B03BF007433C0 /* MTransitTests */,
+				DF364E571A9BDFC3009D408D /* MTransit WatchKit Extension */,
+				DF364E651A9BDFC3009D408D /* MTransit WatchKit App */,
 				DF67710B1A8B03BF007433C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +189,8 @@
 			children = (
 				DF67710A1A8B03BF007433C0 /* MTransit.app */,
 				DF6771231A8B03BF007433C0 /* MTransitTests.xctest */,
+				DF364E561A9BDFC3009D408D /* MTransit WatchKit Extension.appex */,
+				DF364E611A9BDFC3009D408D /* MTransit WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +244,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DF364E551A9BDFC3009D408D /* MTransit WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF364E751A9BDFC3009D408D /* Build configuration list for PBXNativeTarget "MTransit WatchKit Extension" */;
+			buildPhases = (
+				DF364E521A9BDFC3009D408D /* Sources */,
+				DF364E531A9BDFC3009D408D /* Frameworks */,
+				DF364E541A9BDFC3009D408D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF364E641A9BDFC3009D408D /* PBXTargetDependency */,
+			);
+			name = "MTransit WatchKit Extension";
+			productName = "MTransit WatchKit Extension";
+			productReference = DF364E561A9BDFC3009D408D /* MTransit WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		DF364E601A9BDFC3009D408D /* MTransit WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF364E741A9BDFC3009D408D /* Build configuration list for PBXNativeTarget "MTransit WatchKit App" */;
+			buildPhases = (
+				DF364E5F1A9BDFC3009D408D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MTransit WatchKit App";
+			productName = "MTransit WatchKit App";
+			productReference = DF364E611A9BDFC3009D408D /* MTransit WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 		DF6771091A8B03BF007433C0 /* MTransit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF67712D1A8B03BF007433C0 /* Build configuration list for PBXNativeTarget "MTransit" */;
@@ -145,10 +284,12 @@
 				DF6771061A8B03BF007433C0 /* Sources */,
 				DF6771071A8B03BF007433C0 /* Frameworks */,
 				DF6771081A8B03BF007433C0 /* Resources */,
+				DF364E761A9BDFC3009D408D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DF364E6E1A9BDFC3009D408D /* PBXTargetDependency */,
 			);
 			name = MTransit;
 			productName = MTransit;
@@ -182,6 +323,12 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Kelly Innes";
 				TargetAttributes = {
+					DF364E551A9BDFC3009D408D = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					DF364E601A9BDFC3009D408D = {
+						CreatedOnToolsVersion = 6.3;
+					};
 					DF6771091A8B03BF007433C0 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -206,11 +353,31 @@
 			targets = (
 				DF6771091A8B03BF007433C0 /* MTransit */,
 				DF6771221A8B03BF007433C0 /* MTransitTests */,
+				DF364E551A9BDFC3009D408D /* MTransit WatchKit Extension */,
+				DF364E601A9BDFC3009D408D /* MTransit WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DF364E541A9BDFC3009D408D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF364E621A9BDFC3009D408D /* MTransit WatchKit App.app in Resources */,
+				DF364E5E1A9BDFC3009D408D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF364E5F1A9BDFC3009D408D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF364E6A1A9BDFC3009D408D /* Interface.storyboard in Resources */,
+				DF364E6C1A9BDFC3009D408D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DF6771081A8B03BF007433C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -230,6 +397,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DF364E521A9BDFC3009D408D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF364E5C1A9BDFC3009D408D /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DF6771061A8B03BF007433C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,6 +413,7 @@
 				DF6771371A8B041D007433C0 /* MTViewController.m in Sources */,
 				DF6771101A8B03BF007433C0 /* main.m in Sources */,
 				DFF5664A1A8E777400149B74 /* MTSpoke.m in Sources */,
+				DF364E7B1A9BF7E5009D408D /* MTTestClass.m in Sources */,
 				DFF566471A8E776100149B74 /* MTHub.m in Sources */,
 				DFD014B11A8D920700A7B32B /* MTFetchTrains.m in Sources */,
 			);
@@ -254,6 +430,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		DF364E641A9BDFC3009D408D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF364E601A9BDFC3009D408D /* MTransit WatchKit App */;
+			targetProxy = DF364E631A9BDFC3009D408D /* PBXContainerItemProxy */;
+		};
+		DF364E6E1A9BDFC3009D408D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF364E551A9BDFC3009D408D /* MTransit WatchKit Extension */;
+			targetProxy = DF364E6D1A9BDFC3009D408D /* PBXContainerItemProxy */;
+		};
 		DF6771251A8B03BF007433C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DF6771091A8B03BF007433C0 /* MTransit */;
@@ -261,7 +447,82 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		DF364E681A9BDFC3009D408D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF364E691A9BDFC3009D408D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		DF364E701A9BDFC3009D408D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MTransit WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DF364E711A9BDFC3009D408D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = "MTransit WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DF364E721A9BDFC3009D408D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = MTransit_WatchKit_Extension;
+				INFOPLIST_FILE = "MTransit WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		DF364E731A9BDFC3009D408D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				IBSC_MODULE = MTransit_WatchKit_Extension;
+				INFOPLIST_FILE = "MTransit WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 		DF67712B1A8B03BF007433C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -395,6 +656,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DF364E741A9BDFC3009D408D /* Build configuration list for PBXNativeTarget "MTransit WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF364E721A9BDFC3009D408D /* Debug */,
+				DF364E731A9BDFC3009D408D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DF364E751A9BDFC3009D408D /* Build configuration list for PBXNativeTarget "MTransit WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF364E701A9BDFC3009D408D /* Debug */,
+				DF364E711A9BDFC3009D408D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		DF6771051A8B03BF007433C0 /* Build configuration list for PBXProject "MTransit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
