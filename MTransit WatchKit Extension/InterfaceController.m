@@ -30,8 +30,8 @@
 
     // Configure interface objects here.
     [_norristownLabel setText:@"East Falls to 30th"];
-    //[_trainOneLabel setText: [MTTestClass fetchEFTrains]];
-    //[_trainTwoLabel setText: [MTTestClass fetchQLTrains]];
+    [self setEF];
+    [self setQL];
     [_queenLaneLabel setText:@"Queen Ln to 30th"];
     [_buttonText setTitle:@"Inbound"];
     [_buttonText setEnabled:YES];
@@ -62,6 +62,16 @@
         NSLog(@"0");
         _inboundOutboundFlag = 0;
     }
+}
+
+- (void)setEF {
+    NSString *train = @"Train 123 / 12:30pm";
+    [_trainOneLabel setText:train];
+}
+
+- (void)setQL {
+    NSString *train = @"Train 456 / 3:45am";
+    [_trainTwoLabel setText:train];
 }
 
 @end

@@ -13,7 +13,6 @@
 		DF364E6A1A9BDFC3009D408D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF364E681A9BDFC3009D408D /* Interface.storyboard */; };
 		DF364E6C1A9BDFC3009D408D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF364E6B1A9BDFC3009D408D /* Images.xcassets */; };
 		DF364E6F1A9BDFC3009D408D /* MTransit WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DF364E561A9BDFC3009D408D /* MTransit WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		DF364E7B1A9BF7E5009D408D /* MTTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DF364E7A1A9BF7E5009D408D /* MTTestClass.m */; };
 		DF6771101A8B03BF007433C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF67710F1A8B03BF007433C0 /* main.m */; };
 		DF6771131A8B03BF007433C0 /* MTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6771121A8B03BF007433C0 /* MTAppDelegate.m */; };
 		DF67711B1A8B03BF007433C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF67711A1A8B03BF007433C0 /* Images.xcassets */; };
@@ -75,8 +74,6 @@
 		DF364E691A9BDFC3009D408D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		DF364E6B1A9BDFC3009D408D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DF364E781A9BF593009D408D /* MTransitKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTransitKit.h; sourceTree = "<group>"; };
-		DF364E791A9BF7E5009D408D /* MTTestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTTestClass.h; path = ../MTransit/MTTestClass.h; sourceTree = "<group>"; };
-		DF364E7A1A9BF7E5009D408D /* MTTestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTTestClass.m; path = ../MTransit/MTTestClass.m; sourceTree = "<group>"; };
 		DF67710A1A8B03BF007433C0 /* MTransit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTransit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF67710E1A8B03BF007433C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF67710F1A8B03BF007433C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -127,8 +124,6 @@
 		DF364E571A9BDFC3009D408D /* MTransit WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				DF364E791A9BF7E5009D408D /* MTTestClass.h */,
-				DF364E7A1A9BF7E5009D408D /* MTTestClass.m */,
 				DF364E5A1A9BDFC3009D408D /* InterfaceController.h */,
 				DF364E5B1A9BDFC3009D408D /* InterfaceController.m */,
 				DF364E5D1A9BDFC3009D408D /* Images.xcassets */,
@@ -413,7 +408,6 @@
 				DF6771371A8B041D007433C0 /* MTViewController.m in Sources */,
 				DF6771101A8B03BF007433C0 /* main.m in Sources */,
 				DFF5664A1A8E777400149B74 /* MTSpoke.m in Sources */,
-				DF364E7B1A9BF7E5009D408D /* MTTestClass.m in Sources */,
 				DFF566471A8E776100149B74 /* MTHub.m in Sources */,
 				DFD014B11A8D920700A7B32B /* MTFetchTrains.m in Sources */,
 			);
@@ -663,6 +657,7 @@
 				DF364E731A9BDFC3009D408D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF364E751A9BDFC3009D408D /* Build configuration list for PBXNativeTarget "MTransit WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -671,6 +666,7 @@
 				DF364E711A9BDFC3009D408D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF6771051A8B03BF007433C0 /* Build configuration list for PBXProject "MTransit" */ = {
 			isa = XCConfigurationList;

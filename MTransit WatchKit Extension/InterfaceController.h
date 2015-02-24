@@ -8,9 +8,6 @@
 
 #import <WatchKit/WatchKit.h>
 #import <Foundation/Foundation.h>
-#import "MTTestClass.h"
-#import "../MTransit/MTFetchTrains.h"
-
 
 @interface InterfaceController : WKInterfaceController
 
