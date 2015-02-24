@@ -30,8 +30,8 @@
 
     // Configure interface objects here.
     [_norristownLabel setText:@"East Falls to 30th"];
-    [_trainOneLabel setText: [MTTestClass fetchEFTrains]];
-    [_trainTwoLabel setText: [MTTestClass fetchQLTrains]];
+    //[_trainOneLabel setText: [MTTestClass fetchEFTrains]];
+    //[_trainTwoLabel setText: [MTTestClass fetchQLTrains]];
     [_queenLaneLabel setText:@"Queen Ln to 30th"];
     [_buttonText setTitle:@"Inbound"];
     [_buttonText setEnabled:YES];

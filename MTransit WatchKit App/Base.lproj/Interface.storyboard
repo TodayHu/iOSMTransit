@@ -10,10 +10,10 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <label alignment="left" text="East Falls to 30th" textAlignment="left" id="qJT-YG-e5Z"/>
-                        <label alignment="left" text="Train 1 / Time" id="mdD-XB-TQZ"/>
-                        <label alignment="left" text="Queen Ln to 30th" id="eyg-R5-4KX"/>
-                        <label alignment="left" text="Train 2 / Time" id="5h8-SW-Ks5"/>
+                        <label alignment="left" textAlignment="left" id="qJT-YG-e5Z"/>
+                        <label alignment="left" id="mdD-XB-TQZ"/>
+                        <label alignment="left" id="eyg-R5-4KX"/>
+                        <label alignment="left" id="5h8-SW-Ks5"/>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Inbound" id="xRF-dp-e1p">
                             <connections>
                                 <action selector="buttonPressed" destination="AgC-eL-Hgc" id="fcX-Cw-DvN"/>
