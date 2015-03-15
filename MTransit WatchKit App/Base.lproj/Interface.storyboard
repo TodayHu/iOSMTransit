@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7515.2" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7512"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
@@ -10,11 +10,15 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <label alignment="left" textAlignment="left" id="qJT-YG-e5Z"/>
-                        <label alignment="left" id="mdD-XB-TQZ"/>
+                        <label alignment="center" text="MezTransit" id="eWm-AE-cn8">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label alignment="left" id="qJT-YG-e5Z"/>
+                        <label alignment="right" id="mdD-XB-TQZ"/>
                         <label alignment="left" id="eyg-R5-4KX"/>
-                        <label alignment="left" id="5h8-SW-Ks5"/>
+                        <label alignment="right" id="5h8-SW-Ks5"/>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Inbound" id="xRF-dp-e1p">
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="buttonPressed" destination="AgC-eL-Hgc" id="fcX-Cw-DvN"/>
                             </connections>

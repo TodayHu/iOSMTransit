@@ -20,6 +20,9 @@
 		DF6771341A8B0400007433C0 /* MTransit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6771331A8B0400007433C0 /* MTransit.storyboard */; };
 		DF6771371A8B041D007433C0 /* MTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6771361A8B041D007433C0 /* MTViewController.m */; };
 		DF6771391A8B1F2E007433C0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6771381A8B1F2E007433C0 /* MapKit.framework */; };
+		DFB148271AB53BFE00B88321 /* MTFetchTrains.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB148261AB53BFE00B88321 /* MTFetchTrains.m */; };
+		DFB1482A1AB53C0F00B88321 /* MTHub.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB148291AB53C0F00B88321 /* MTHub.m */; };
+		DFB1482D1AB53C1900B88321 /* MTSpoke.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB1482C1AB53C1900B88321 /* MTSpoke.m */; };
 		DFD014B11A8D920700A7B32B /* MTFetchTrains.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD014B01A8D920700A7B32B /* MTFetchTrains.m */; };
 		DFF566471A8E776100149B74 /* MTHub.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF566461A8E776100149B74 /* MTHub.m */; };
 		DFF5664A1A8E777400149B74 /* MTSpoke.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF566491A8E777400149B74 /* MTSpoke.m */; };
@@ -87,6 +90,12 @@
 		DF6771351A8B041D007433C0 /* MTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTViewController.h; sourceTree = "<group>"; };
 		DF6771361A8B041D007433C0 /* MTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTViewController.m; sourceTree = "<group>"; };
 		DF6771381A8B1F2E007433C0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DFB148251AB53BFE00B88321 /* MTFetchTrains.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFetchTrains.h; sourceTree = "<group>"; };
+		DFB148261AB53BFE00B88321 /* MTFetchTrains.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFetchTrains.m; sourceTree = "<group>"; };
+		DFB148281AB53C0F00B88321 /* MTHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTHub.h; sourceTree = "<group>"; };
+		DFB148291AB53C0F00B88321 /* MTHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTHub.m; sourceTree = "<group>"; };
+		DFB1482B1AB53C1900B88321 /* MTSpoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSpoke.h; sourceTree = "<group>"; };
+		DFB1482C1AB53C1900B88321 /* MTSpoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSpoke.m; sourceTree = "<group>"; };
 		DFD014AF1A8D920700A7B32B /* MTFetchTrains.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFetchTrains.h; sourceTree = "<group>"; };
 		DFD014B01A8D920700A7B32B /* MTFetchTrains.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFetchTrains.m; sourceTree = "<group>"; };
 		DFF566451A8E776100149B74 /* MTHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTHub.h; sourceTree = "<group>"; };
@@ -128,6 +137,12 @@
 				DF364E5B1A9BDFC3009D408D /* InterfaceController.m */,
 				DF364E5D1A9BDFC3009D408D /* Images.xcassets */,
 				DF364E581A9BDFC3009D408D /* Supporting Files */,
+				DFB148251AB53BFE00B88321 /* MTFetchTrains.h */,
+				DFB148261AB53BFE00B88321 /* MTFetchTrains.m */,
+				DFB148281AB53C0F00B88321 /* MTHub.h */,
+				DFB148291AB53C0F00B88321 /* MTHub.m */,
+				DFB1482B1AB53C1900B88321 /* MTSpoke.h */,
+				DFB1482C1AB53C1900B88321 /* MTSpoke.m */,
 			);
 			path = "MTransit WatchKit Extension";
 			sourceTree = "<group>";
@@ -396,7 +411,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB1482A1AB53C0F00B88321 /* MTHub.m in Sources */,
+				DFB148271AB53BFE00B88321 /* MTFetchTrains.m in Sources */,
 				DF364E5C1A9BDFC3009D408D /* InterfaceController.m in Sources */,
+				DFB1482D1AB53C1900B88321 /* MTSpoke.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +480,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "MTransit WatchKit Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SKIP_INSTALL = YES;
@@ -475,7 +493,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = "MTransit WatchKit Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SKIP_INSTALL = YES;
@@ -551,10 +569,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos8.2;
 			};
 			name = Debug;
 		};
@@ -586,9 +604,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos8.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
